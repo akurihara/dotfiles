@@ -80,7 +80,9 @@
     nnoremap <leader>q! :q!<CR>
     nnoremap <leader>e :e<CR>
     nnoremap <leader>e! :e!<CR>
-    nnoremap <Bslash> :Ag 
+    nnoremap <Bslash> :Ag
+    nnoremap <leader>m :%!python -m json.tool<CR>
+
 
 "   Syntastic
 "   ----------------------------------------------------------
