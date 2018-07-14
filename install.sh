@@ -9,8 +9,10 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ln -sv "$DOTFILES_DIR/.bash_profile" ~
 ln -sv "$DOTFILES_DIR/.vimrc" ~
+ln -sv "$DOTFILES_DIR/.gitconfig" ~
 
 # Package managers and packages
 
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/pip.sh"
+. "$DOTFILES_DIR/install/macosdefaults.sh"
