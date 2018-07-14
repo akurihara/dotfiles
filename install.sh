@@ -13,3 +13,4 @@ ln -sv "$DOTFILES_DIR/.vimrc" ~
 # Package managers and packages
 
 . "$DOTFILES_DIR/install/brew.sh"
+. "$DOTFILES_DIR/install/pip.sh"
