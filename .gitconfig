@@ -1,12 +1,12 @@
 [user]
-	name = Alex Kurihara
-	email = alex.kurihara@gmail.com
+    name = Alex Kurihara
+    email = alex.kurihara@gmail.com
 [color]
-	ui = true
+    ui = true
 [alias]
-  co = checkout 
-  cob = checkout -b
-  b = branch
+    co = checkout 
+    cob = checkout -b
+    b = branch
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
 	editor = /usr/local/bin/vim
