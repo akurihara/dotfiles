@@ -99,7 +99,7 @@
 
 "   NERDTree
 "   ----------------------------------------------------------
-    let NERDTreeIgnore = ['\.pyc$']
+    let NERDTreeIgnore = ['\.pyc$', '\.swp$']
     let NERDTreeShowHidden=1
 
 "   Powerline

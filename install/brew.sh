@@ -1,18 +1,21 @@
 # Install Homebrew
-
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
+# Use Homebrew to install command line applications.
 brew install git
 brew install python
 brew install the_silver_searcher
 brew install tmux
-
+brew install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
 
 # Install Homebrew Cask
 brew tap caskroom/cask
 brew tap caskroom/versions
 
+# Use Homebrew Cask to install GUI applications.
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install spotify
