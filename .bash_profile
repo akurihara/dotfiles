@@ -1,6 +1,6 @@
 # bash custom prompt
-export PS1="\u@\h\w $ "
-# export PS1="\u:\W$ "
+# export PS1="\u@\h\w $ "
+export PS1="\u:\W$ "
 
 # aliases
 alias save_ssh_password='ssh-add ~/.ssh/id_rsa'
