@@ -11,6 +11,10 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 
+# Install Python versions
+pyenv install 2.7.15
+pyenv install 3.7.2
+
 # Install Homebrew Cask
 brew tap caskroom/cask
 brew tap caskroom/versions
