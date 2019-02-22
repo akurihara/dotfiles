@@ -4,6 +4,7 @@ brew update
 
 # Use Homebrew to install command line applications.
 brew install git
+brew install git bash-completion
 brew install python
 brew install the_silver_searcher
 brew install tmux
