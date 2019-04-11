@@ -13,6 +13,7 @@
     Plugin 'rking/ag.vim'
     Plugin 'vim-airline/vim-airline'
     Plugin 'tpope/vim-fugitive'
+    Plugin 'fatih/vim-go'
     Plugin 'craigemery/vim-autotag'
 
     call vundle#end()                                   " required
@@ -64,6 +65,7 @@
       autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
       autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
       autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+      autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
     endif
 
 "   Keyboard Shortcuts
