@@ -102,7 +102,7 @@
 
 "   NERDTree
 "   ----------------------------------------------------------
-    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '.git', 'tags']
+    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '.git', 'tags', '.python-version', '.env', '*.db']
     let NERDTreeShowHidden=1
 
 "   Powerline
