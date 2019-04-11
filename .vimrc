@@ -116,9 +116,9 @@
 "   ----------------------------------------------------------
     set mouse=a
 
-"  Ctrl P
+"   Ctrl P
 "   ----------------------------------------------------------
-   let g:ctrlp_custom_ignore = {
+    let g:ctrlp_custom_ignore = {
      \ 'dir':  '\.git$\|\.node_modules$',
      \ 'file': '\.pyc$\|tags$'
      \ }
