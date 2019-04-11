@@ -13,6 +13,7 @@
     Plugin 'rking/ag.vim'
     Plugin 'vim-airline/vim-airline'
     Plugin 'tpope/vim-fugitive'
+    Plugin 'craigemery/vim-autotag'
 
     call vundle#end()                                   " required
     filetype plugin indent on                           " required
@@ -80,8 +81,10 @@
     nnoremap <leader>q! :q!<CR>
     nnoremap <leader>e :e<CR>
     nnoremap <leader>e! :e!<CR>
-    nnoremap <Bslash> :Ag
+    nnoremap <Bslash> :Ag 
     nnoremap <leader>m :%!python -m json.tool<CR>
+    nnoremap <leader>g :exec("tag ".expand("<cword>"))<CR>
+    nnoremap <leader>G :execute 'tj' expand('<cword>')<CR>zv
 
 
 "   Syntastic
@@ -99,7 +102,7 @@
 
 "   NERDTree
 "   ----------------------------------------------------------
-    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__']
+    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '.git']
     let NERDTreeShowHidden=1
 
 "   Powerline
