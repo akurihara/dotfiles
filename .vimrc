@@ -71,7 +71,7 @@
 "   Keyboard Shortcuts
 "   ----------------------------------------------------------
     let mapleader = ','
-    nnoremap <C-J> <C-W><C-J>                           " easier split navigations
+    nnoremap <C-J> <C-W><C-J>                                " easier split navigations
     nnoremap <C-L> <C-W><C-L>
     nnoremap <C-H> <C-W><C-H>
     nnoremap <C-K> <C-W><C-K>
@@ -87,7 +87,7 @@
     nnoremap <leader>m :%!python -m json.tool<CR>
     nnoremap <leader>g :exec("tag ".expand("<cword>"))<CR>
     nnoremap <leader>G :execute 'tj' expand('<cword>')<CR>zv
-
+    nnoremap <C-w>E :SyntasticCheck<CR>                      " manually perform Syntastic check
 
 "   Syntastic
 "   ----------------------------------------------------------
@@ -118,4 +118,7 @@
 
 "  Ctrl P
 "   ----------------------------------------------------------
-   let g:ctrlp_custom_ignore = 'node_modules\|tags\|*.pyc'
+   let g:ctrlp_custom_ignore = {
+     \ 'dir':  '\.git$\|\.node_modules$',
+     \ 'file': '\.pyc$\|tags$'
+     \ }
