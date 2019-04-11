@@ -102,7 +102,7 @@
 
 "   NERDTree
 "   ----------------------------------------------------------
-    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '.git']
+    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '.git', 'tags']
     let NERDTreeShowHidden=1
 
 "   Powerline
@@ -112,3 +112,7 @@
 "   Mouse
 "   ----------------------------------------------------------
     set mouse=a
+
+"  Ctrl P
+"   ----------------------------------------------------------
+   let g:ctrlp_custom_ignore = 'node_modules\|tags\|*.pyc'
