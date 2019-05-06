@@ -7,9 +7,9 @@ alias save_ssh_password='ssh-add ~/.ssh/id_rsa'
 alias install_reqs="export CFLAGS='-std=c99' && pip install --upgrade -r requirements.txt"
 
 # virtualenvwrapper configuration 
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+# export WORKON_HOME=$HOME/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # pyenv (legacy script?)
 #
