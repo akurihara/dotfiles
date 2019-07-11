@@ -3,8 +3,10 @@
 export PS1="\u:\W$ "
 
 # aliases
-alias save_ssh_password='ssh-add ~/.ssh/id_rsa'
+alias save_ssh_password="ssh-add ~/.ssh/id_rsa"
 alias install_reqs="export CFLAGS='-std=c99' && pip install --upgrade -r requirements.txt"
+alias pg_start="pg_ctl -D /usr/local/var/postgres start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop"
 
 # virtualenvwrapper configuration 
 # export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2

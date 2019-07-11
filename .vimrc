@@ -105,7 +105,7 @@
 
 "   NERDTree
 "   ----------------------------------------------------------
-    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '\.git', '\.mypy_cache', 'tags', '.python-version', '*.db']
+    let NERDTreeIgnore = ['\.pyc$', '\.swp$', '__pycache__', '\.git', '\.mypy_cache', '.python-version', '*.db']
     let NERDTreeShowHidden=1
 
 "   Powerline
@@ -120,5 +120,5 @@
 "   ----------------------------------------------------------
     let g:ctrlp_custom_ignore = {
      \ 'dir':  '\.git$\|\.node_modules$',
-     \ 'file': '\.pyc$\|tags$'
+     \ 'file': '\.pyc$\$'
      \ }
