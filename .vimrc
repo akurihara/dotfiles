@@ -71,7 +71,7 @@
 "   Keyboard Shortcuts
 "   ----------------------------------------------------------
     let mapleader = ','
-    nnoremap <C-J> <C-W><C-J>                                " easier split navigations
+    nnoremap <C-J> <C-W><C-J>                                " easier split navigations.
     nnoremap <C-L> <C-W><C-L>
     nnoremap <C-H> <C-W><C-H>
     nnoremap <C-K> <C-W><C-K>
@@ -85,9 +85,9 @@
     nnoremap <leader>e! :e!<CR>
     nnoremap <Bslash> :Ag 
     nnoremap <leader>m :%!python -m json.tool<CR>
-    nnoremap <leader>g :exec("tag ".expand("<cword>"))<CR>
+    nnoremap <leader>g :exec("tag ".expand("<cword>"))<CR>   " jump to definition.
     nnoremap <leader>G :execute 'tj' expand('<cword>')<CR>zv
-    nnoremap <C-w>E :SyntasticCheck<CR>                      " manually perform Syntastic check
+    nnoremap <C-w>E :SyntasticCheck<CR>                      " manually perform Syntastic check.
 
 "   Syntastic
 "   ----------------------------------------------------------
@@ -122,3 +122,7 @@
      \ 'dir':  '\.git$\|\.node_modules$',
      \ 'file': '\.pyc$\$'
      \ }
+
+"   Ctags
+"   ----------------------------------------------------------
+    set tags+=tags;$HOME                                " Ctags searches for tag file up to home directory.

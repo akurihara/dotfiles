@@ -10,5 +10,6 @@
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
     editor = /usr/local/bin/vim
+	  excludesfile = /Users/alexkurihara/.global_ignore
 [push]
     default = simple
