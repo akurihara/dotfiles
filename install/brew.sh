@@ -39,3 +39,4 @@ brew cask install psequel
 brew cask install gfxcardstatus
 brew cask install figma
 brew cask isntall steam
+brew cask install postico
