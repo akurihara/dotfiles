@@ -14,6 +14,7 @@ brew install ctags
 brew install postgresql
 brew install redis
 brew install sqlite
+brew install docker
 
 # Install Python versions
 pyenv install 2.7.15
@@ -40,3 +41,4 @@ brew cask install gfxcardstatus
 brew cask install figma
 brew cask isntall steam
 brew cask install postico
+brew cask install docker
