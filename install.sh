@@ -16,3 +16,7 @@ ln -sv "$DOTFILES_DIR/.gitconfig" ~
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/pip.sh"
 . "$DOTFILES_DIR/install/macosdefaults.sh"
+
+# Install Vundle
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
