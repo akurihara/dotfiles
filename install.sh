@@ -5,11 +5,12 @@
 export DOTFILES_DIR EXTRA_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Bunch of symlinks
+# Set up symlinks
 
 ln -sv "$DOTFILES_DIR/.bash_profile" ~
 ln -sv "$DOTFILES_DIR/.vimrc" ~
 ln -sv "$DOTFILES_DIR/.gitconfig" ~
+ln -sv "$DOTFILES_DIR/tomorrow_night.vim" ~/.vim/colors
 
 # Package managers and packages
 
@@ -20,3 +21,4 @@ ln -sv "$DOTFILES_DIR/.gitconfig" ~
 # Install Vundle
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
