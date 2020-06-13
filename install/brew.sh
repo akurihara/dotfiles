@@ -3,6 +3,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 # Use Homebrew to install command line applications.
+brew install macvim
 brew install git
 brew install git bash-completion
 brew install python
@@ -37,8 +38,6 @@ brew cask install authy
 brew cask install sequel-pro
 brew cask install postman
 brew cask install psequel
-brew cask install gfxcardstatus
-brew cask install figma
 brew cask isntall steam
 brew cask install postico
 brew cask install docker
