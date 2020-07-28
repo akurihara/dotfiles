@@ -13,3 +13,5 @@
 	  excludesfile = /Users/alexkurihara/.global_ignore
 [push]
     default = simple
+[pull]
+    ff = only
