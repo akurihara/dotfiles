@@ -16,3 +16,13 @@ fi
 # pyenv path
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Created by `userpath` on 2020-08-06 03:30:07
+export PATH="$PATH:/Users/akurihara/.local/bin"
+
+# Git completion.
+fpath=(~/.zsh/completions $fpath) 
+autoload -U compinit && compinit
+
+# Protoman Github token
+export GITHUB_ENTERPRISE_TOKEN=placeholder
