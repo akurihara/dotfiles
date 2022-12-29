@@ -3,19 +3,30 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 # Use Homebrew to install command line applications.
-brew install neovim
+
+## general
 brew install git
 brew install git bash-completion
-brew install python
-brew install the_silver_searcher
+brew install docker
 brew install tmux
+
+## vim
+brew install neovim
+brew install ctags
+brew install the_silver_searcher
+
+## python
+brew install python
 brew install pyenv
 brew install pipenv
-brew install ctags
+
+##java
+brew install jenv
+
+## databases
 brew install postgresql
 brew install redis
 brew install sqlite
-brew install docker
 
 # Install Python versions
 pyenv install 2.7.15
