@@ -1,6 +1,7 @@
 # bash custom prompt
 # export PS1="\u@\h\w $ "
-export PS1="\u:\W$ "
+export PS1="\u:\W $ "
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # aliases
 alias save_ssh_password="ssh-add ~/.ssh/id_rsa"
