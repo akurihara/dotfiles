@@ -1,7 +1,9 @@
 # zsh custom prompt
-PS1='%n:%~ %# '
+export PS1='%n:%~ %# '
 
-# Set PATH, MANPATH, etc., for Homebrew.
+# Homebrew
+export HOMEBREW_NO_ENV_HINTS=1
+## Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # jenv
