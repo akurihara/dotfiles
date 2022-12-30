@@ -8,7 +8,7 @@ brew update
 brew install git
 brew install git bash-completion
 brew install docker
-# brew install tmux
+brew install tmux
 
 ## Vim
 brew install neovim
@@ -33,8 +33,8 @@ pyenv install 2.7.15
 pyenv install 3.7.1
 
 # Install Homebrew Cask
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
 
 # Use Homebrew Cask to install GUI applications.
 brew install --cask iterm2
@@ -45,7 +45,7 @@ brew install --cask spotify
 brew install --cask slack
 brew install --cask intellij-idea-ce
 brew install --cask spectacle
-brew install --cask avast
+brew install --cask avast-security
 brew install --cask authy
 brew install --cask sequel-pro
 brew install --cask postman
