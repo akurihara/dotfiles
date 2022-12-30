@@ -6,9 +6,7 @@ brew update
 
 ## General
 brew install git
-brew install git bash-completion
 brew install docker
-brew install tmux
 
 ## Vim
 brew install ctags
@@ -26,7 +24,6 @@ brew install mvn
 ## Databases
 brew install postgresql
 brew install redis
-brew install sqlite
 
 # Install python versions
 pyenv install 2.7.15
@@ -47,13 +44,19 @@ brew install --cask intellij-idea-ce
 brew install --cask spectacle
 brew install --cask avast-security
 brew install --cask authy
-brew install --cask sequel-pro
 brew install --cask postman
 brew install --cask psequel
-brew install --cask gfxcardstatus
-brew isntall --cask steam
+brew install --cask steam
 brew install --cask docker
 brew install --cask vlc
 
 # Install vundle for vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Set up Git completion for zsh
+## Create the folder structure
+mkdir -p ~/.zsh
+cd ~/.zsh
+## Download the scripts
+curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh

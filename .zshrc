@@ -9,3 +9,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit && compinit

@@ -13,9 +13,6 @@ alias mktags="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./ta
 # pyenv
 eval "$(pyenv init -)"
 
-# bash-completion (Git autocomplete, installed with brew)
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
 # nosecomplete (Nosetests autocomplete, installed with pip)
 __ltrim_colon_completions() {
     # If word-to-complete contains a colon,
