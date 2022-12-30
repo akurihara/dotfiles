@@ -11,7 +11,6 @@ brew install docker
 brew install tmux
 
 ## Vim
-brew install neovim
 brew install ctags
 brew install the_silver_searcher
 
@@ -22,6 +21,7 @@ brew install pipenv
 
 ## Java
 brew install jenv
+brew install mvn
 
 ## Databases
 brew install postgresql
