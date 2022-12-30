@@ -1,34 +1,34 @@
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 
 # Use Homebrew to install command line applications.
 
-## general
+## General
 brew install git
 brew install git bash-completion
 brew install docker
-brew install tmux
+# brew install tmux
 
-## vim
+## Vim
 brew install neovim
 brew install ctags
 brew install the_silver_searcher
 
-## python
+## Python
 brew install python
 brew install pyenv
 brew install pipenv
 
-##java
+## Java
 brew install jenv
 
-## databases
+## Databases
 brew install postgresql
 brew install redis
 brew install sqlite
 
-# Install Python versions
+# Install python versions
 pyenv install 2.7.15
 pyenv install 3.7.1
 
@@ -54,3 +54,6 @@ brew install --cask gfxcardstatus
 brew isntall --cask steam
 brew install --cask docker
 brew install --cask vlc
+
+# Install vundle for vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

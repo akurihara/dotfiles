@@ -14,6 +14,6 @@ ln -sv "$DOTFILES_DIR/.gitconfig" ~
 
 # Package managers and packages
 
-. "$DOTFILES_DIR/install/brew.sh"
-. "$DOTFILES_DIR/install/pip.sh"
-. "$DOTFILES_DIR/install/macosdefaults.sh"
+/bin/bash "$DOTFILES_DIR/install/brew.sh"
+/bin/bash "$DOTFILES_DIR/install/pip.sh"
+/bin/bash "$DOTFILES_DIR/install/macosdefaults.sh"
