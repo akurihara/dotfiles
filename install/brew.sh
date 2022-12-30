@@ -20,6 +20,10 @@ brew install pipenv
 ## Java
 brew install jenv
 brew install mvn
+jenv enable-plugin maven
+jenv enable-plugin export
+# Needed for projects using Maven Wrapper 
+mvn wrapper:wrapper
 
 ## Databases
 brew install postgresql
