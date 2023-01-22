@@ -12,3 +12,6 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
+
+# Enable key repeating for IntelliJ CE
+defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
