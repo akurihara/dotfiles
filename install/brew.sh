@@ -15,7 +15,6 @@ brew install the_silver_searcher
 ## Python
 brew install python
 brew install pyenv
-brew install pipenv
 
 ## Java
 brew install jenv
