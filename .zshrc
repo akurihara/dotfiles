@@ -14,3 +14,6 @@ eval "$(jenv init -)"
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
+
+# Point python command to python3
+alias python='/opt/homebrew/bin/python3'
