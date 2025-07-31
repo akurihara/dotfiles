@@ -1,6 +1,6 @@
 [user]
-    name = Alex Kurihara
-    email = alex.kurihara@gmail.com
+	name = Alex Kurihara
+	email = akurihara@spotify.com
 [color]
     ui = true
 [alias]
@@ -13,3 +13,10 @@
 	  excludesfile = /Users/alexkurihara/.global_ignore
 [push]
     default = simple
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[maintenance]
+	repo = /Users/akurihara/Developer/services-pilot
