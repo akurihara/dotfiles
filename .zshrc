@@ -31,6 +31,9 @@ export CLOUD_ML_REGION='europe-west1'
 export VERTEX_REGION_CLAUDE_4_0_OPUS='europe-west4'
 export ANTHROPIC_VERTEX_PROJECT_ID=spotify-claude-code-trial
 
+# Google Cloud SDK
+export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
