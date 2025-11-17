@@ -34,6 +34,9 @@ export ANTHROPIC_VERTEX_PROJECT_ID=spotify-claude-code-trial
 # Google Cloud SDK
 export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
 
+# Jira CLI
+export JIRA_API_TOKEN=$(cat ~/jira_token.txt)
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

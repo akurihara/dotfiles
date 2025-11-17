@@ -1,7 +1,9 @@
 ## Jira Integration
 
+There are two Jira integrations available: Atalassian CLI and Jira CLI.
+
 ### Atlassian CLI (`acli`)
-Use the Atlassian CLI to interact with Jira tickets:
+Use the Atlassian CLI for most interactions with Jira tickets. However, this integration does not support updating the Parent field of a Jira ticket (so use the Jira CLI) for that.
 
 #### Common Commands
 - `acli jira workitem search --jql "assignee = currentUser()"` - Show all tickets assigned to you
@@ -16,3 +18,10 @@ Use the Atlassian CLI to interact with Jira tickets:
 - `project = MOON` - All tickets in the MOON project
 - `priority = "P1 - Highest"` - High priority tickets
 - `project = MOON AND type = Epic` - Epics in the MOON project
+
+### Jira CLI (`acli`)
+Use the Jira CLI specifically for updating the Parent field of Jira tickets:
+
+#### Update Parent Command
+The format of the command is as follows: `jira issue edit [TICKET-KEY] -P[PARENT-KEY] --no-input`
+An example without placeholders would be `jira issue edit MOON-2284 -PMOON-2288 --no-input`
