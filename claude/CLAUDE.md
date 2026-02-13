@@ -7,6 +7,7 @@ Use the Atlassian CLI for most interactions with Jira tickets. However, this int
 
 #### Common Commands
 - `acli jira workitem search --jql "assignee = currentUser()"` - Show all tickets assigned to you
+- `acli jira workitem search --jql "assignee = 'akurihara@spotify.com"` - Show all tickets assigned to another user
 - `acli jira workitem search --jql "assignee = currentUser() AND status not in (Closed, Cancelled, Done, Resolved)"` - Show only active tickets assigned to you
 - `acli jira workitem view [TICKET-KEY]` - View details of a specific ticket
 - `acli jira workitem search --jql "project = [PROJECT-KEY]"` - Search tickets in a specific project
