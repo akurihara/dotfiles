@@ -21,28 +21,25 @@ zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
-# Point JAVA_HOME to the right JDK version
-# export JAVA_HOME="$(/usr/libexec/java_home -v 21)"
+# 1. Read the ~/.env file (defines the variables locally in the shell)
+source ~/.env
 
-# Claude Code
-export CLAUDE_CODE_USE_VERTEX=1
-export ANTHROPIC_SMALL_FAST_MODEL='claude-3-5-haiku@20241022'
-export CLOUD_ML_REGION='europe-west1'
-export VERTEX_REGION_CLAUDE_4_0_OPUS='europe-west4'
-export ANTHROPIC_VERTEX_PROJECT_ID=spotify-claude-code-trial
+# Point the URL to Ollama's local server
+export ANTHROPIC_BASE_URL=$ANTHROPIC_BASE_URL
+export ANTHROPIC_AUTH_TOKEN=$ANTHROPIC_AUTH_TOKEN
+export ANTHROPIC_MODEL="glm-4.7-flash"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7-flash"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7-flash"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.7-flash"
 
-# Google Cloud SDK
-export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
-
-# Jira CLI
-export JIRA_API_TOKEN=$(cat ~/jira_token.txt)
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PATH=/opt/spotify-devex/bin:$PATH
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+# Ollama
+#
+# unset ANTHROPIC_AUTH_TOKEN
+# Set a placeholder token (Ollama requires one, but doesn't validate it)
+# export ANTHROPIC_API_KEY="ollama"
+# Set the default model
+# export ANTHROPIC_MODEL="qwen3:8b"
+# export ANTHROPIC_BASE_URL="http://localhost:11434"
+export OLLAMA_CONTEXT_LENGTH=32734
+export OLLAMA_FLASH_ATTENTION=1
+export OLLAMA_KV_CACHE_TYPE=q4_0
