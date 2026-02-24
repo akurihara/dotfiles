@@ -14,4 +14,4 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 sudo nvram SystemAudioVolume=" "
 
 # Enable key repeating for IntelliJ CE
-defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
+defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false

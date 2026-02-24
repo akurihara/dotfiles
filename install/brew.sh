@@ -44,7 +44,7 @@ brew install --cask firefox
 brew install --cask 1password
 brew install --cask spotify
 brew install --cask slack
-brew install --cask intellij-idea-ce
+brew install --cask intellij-idea
 brew install --cask google-cloud-sdk
 brew install --cask spectacle
 brew install --cask avast-security
