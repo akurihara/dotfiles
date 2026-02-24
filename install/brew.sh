@@ -9,6 +9,7 @@ brew install git
 brew install docker
 
 ## Vim
+brew install nvim
 brew install ctags
 brew install the_silver_searcher
 
@@ -48,11 +49,10 @@ brew install --cask google-cloud-sdk
 brew install --cask spectacle
 brew install --cask avast-security
 brew install --cask authy
-brew install --cask postman
-brew install --cask psequel
 brew install --cask steam
 brew install --cask docker
 brew install --cask vlc
+brew install --cask claude-code
 
 # Install vundle for vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
