@@ -1,6 +1,10 @@
 # zsh custom prompt
 export PS1='%n:%~ %# '
 
+# Set Java 21 as the default
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+export PATH="$JAVA_HOME/bin:$PATH"
+
 # Programs that need python use python3
 alias python=/usr/bin/python3
 
@@ -24,13 +28,19 @@ autoload -Uz compinit && compinit
 # 1. Read the ~/.env file (defines the variables locally in the shell)
 source ~/.env
 
-# Point the URL to Ollama's local server
-export ANTHROPIC_BASE_URL=$ANTHROPIC_BASE_URL
-export ANTHROPIC_AUTH_TOKEN=$ANTHROPIC_AUTH_TOKEN
-export ANTHROPIC_MODEL="glm-4.7-flash"
-export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7-flash"
-export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7-flash"
-export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.7-flash"
+unset ANTHROPIC_BASE_URL
+unset ANTHROPIC_AUTH_TOKEN
+unset ANTHROPIC_MODEL
+unset ANTHROPIC_DEFAULT_OPUS_MODEL
+unset ANTHROPIC_DEFAULT_SONNET_MODEL
+unset ANTHROPIC_DEFAULT_HAIKU_MODEL
+
+# export ANTHROPIC_BASE_URL=$ANTHROPIC_BASE_URL
+# export ANTHROPIC_AUTH_TOKEN=$ANTHROPIC_AUTH_TOKEN
+# export ANTHROPIC_MODEL="glm-4.7-flash"
+# export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7-flash"
+# export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7-flash"
+# export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.7-flash"
 
 # Ollama
 #
