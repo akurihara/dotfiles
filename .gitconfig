@@ -20,8 +20,6 @@
 	clean = git-lfs clean -- %f
 [maintenance]
 	repo = /Users/akurihara/Developer/services-pilot
-[includeIf "/Users/alexkurihara/.claude-squad/worktrees"]
-  path = ~/.gitconfig-claude
 [credential "https://github.com"]
 	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
