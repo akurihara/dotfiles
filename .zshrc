@@ -28,20 +28,6 @@ autoload -Uz compinit && compinit
 # 1. Read the ~/.env file (defines the variables locally in the shell)
 source ~/.env
 
-unset ANTHROPIC_BASE_URL
-unset ANTHROPIC_AUTH_TOKEN
-unset ANTHROPIC_MODEL
-unset ANTHROPIC_DEFAULT_OPUS_MODEL
-unset ANTHROPIC_DEFAULT_SONNET_MODEL
-unset ANTHROPIC_DEFAULT_HAIKU_MODEL
-
-# export ANTHROPIC_BASE_URL=$ANTHROPIC_BASE_URL
-# export ANTHROPIC_AUTH_TOKEN=$ANTHROPIC_AUTH_TOKEN
-# export ANTHROPIC_MODEL="glm-4.7-flash"
-# export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7-flash"
-# export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7-flash"
-# export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.7-flash"
-
 # Ollama
 #
 # unset ANTHROPIC_AUTH_TOKEN
